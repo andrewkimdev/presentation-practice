@@ -64,3 +64,33 @@ body {
   background: var(--font-color);
   color: #333;
 }
+
+/* Page Animation */
+#page-1 h1 {
+  transform: translate(-100vw, -100vh);
+  animation: heading var(--animation-speed) forwards linear;
+}
+
+#page-1 p {
+  transform: translate(-100vw, -100vh);
+    animation: heading var(--animation-speed) forwards linear var(--animation-speed);
+}
+
+@keyframes heading {
+  20% {
+    transform: translate(0, 0);
+  }
+  40% {
+    transform: translate(-50vw, -50vh);
+  }
+  60% {
+    transform: translate(0, 0);
+  }
+  80% {
+    transform: translate(-25vw, -25vw);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+
+}
